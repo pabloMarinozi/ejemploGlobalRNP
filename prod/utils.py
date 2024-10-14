@@ -33,7 +33,7 @@ def load_model(vocab_src,vocab_tgt):
     TGT_PAD_IDX = vocab_tgt['<pad>']
 
     model = Seq2Seq(enc, dec, SRC_PAD_IDX, TGT_PAD_IDX, device).to(device)
-    model.load_state_dict(torch.load('tut6-model.pt', map_location=device))
+    model.load_state_dict(torch.load('prod/tut6-model.pt', map_location=device))
     model.eval()
     return model, device
 

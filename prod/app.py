@@ -4,7 +4,7 @@ from model import Seq2Seq, Encoder, Decoder, Tatoeba_Vocab
 from utils import load_model, translate_sentence, load_vocab
 
 # Cargar los vocabularios
-vocab_src, vocab_tgt = load_vocab('vocab_src.pkl', 'vocab_tgt.pkl')
+vocab_src, vocab_tgt = load_vocab('prod/vocab_src.pkl', 'prod/vocab_tgt.pkl')
 
 model, device = load_model(vocab_src,vocab_tgt)
 
