@@ -2,6 +2,10 @@ import torch
 import streamlit as st
 from model import Seq2Seq, Encoder, Decoder, Tatoeba_Vocab
 from utils import load_model, translate_sentence, load_vocab
+from spacy.cli import download
+
+#Descarga el modelo del tokenizador en ingles
+download("en_core_web_sm")
 
 # Cargar los vocabularios
 vocab_src, vocab_tgt = load_vocab('prod/vocab_src.pkl', 'prod/vocab_tgt.pkl')
