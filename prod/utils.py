@@ -3,9 +3,7 @@ from model import Seq2Seq, Encoder, Decoder, Tatoeba_Vocab
 import pickle
 import spacy
 import os
-import subprocess
 
-subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
 
 # Función para cargar el vocabulario
 def load_vocab(vocab_src_path, vocab_tgt_path):
