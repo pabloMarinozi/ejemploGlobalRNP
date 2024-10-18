@@ -22,11 +22,3 @@ Este proyecto es un ejemplo estructurado para guiar el desarrollo del Proyecto G
    ```bash
    streamlit run prod\app.py
    ```
-
-## Contribución
-
-Las contribuciones son bienvenidas. Realiza un fork del repositorio, haz tus cambios y abre un pull request.
-
----
-
-Este es solo un punto de partida. Puedes personalizarlo añadiendo más detalles según la finalidad exacta del proyecto.
